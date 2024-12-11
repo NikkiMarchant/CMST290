@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+    img {
+ 	 max-width: 100%;
+ 	 height: auto;
+	}
+	.row::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	[class*="col-"] {
+		float: left;
+		padding: 15px;
+	}
+	html {
+		font-family: "Lucida Sans", sans-serif;
+	}
+    body{
+        background-color:#000000;
+    }
+	.header {
+		background-color:#00b377;
+		color: #ffffff;
+		padding: 15px;
+	}
+    h1{
+    	color: #ffffff;
+        text-align: center;
+   	}
+    p{
+    	color:#ffffff;
+        font-size: 16px;
+    }
+	.menu ul {
+		list-style-type: none;
+		margin: 1;
+		padding: 1;
+	}
+	.menu li {
+		padding: 19px;
+        text-align:center;
+		margin-bottom: 7px;
+		background-color :#00b377;
+		color: #ffffff;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+	.menu li:hover {
+		background-color: #99ffdd;
+        color: #000000;
+	}
+	.aside {
+		background-color: #00b377;
+		padding: 5px;
+		color: #ffffff;
+		text-align: center;
+		font-size: 16px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+	.footer {
+		background-color: #00b377;
+		color: #ffffff;
+		text-align: center;
+		font-size: 14px;
+		padding: 20px;
+	}
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 28%;}
+    .col-4 {width: 28%;}
+	.col-5 {width: 33.33%;}
+	.col-6 {width: 41.66%;}
+	.col-7 {width: 50%;}
+	.col-8 {width: 58.33%;}
+	.col-9 {width: 66.66%;}
+	.col-10 {width: 75%;}
+	.col-11 {width: 83.33%;}
+	.col-12 {width: 91.66%;}
+	.col-13 {width: 100%;}
+
+	@media only screen and (max-width: 748px) {
+		/* For mobile phones: */
+		[class*="col-"] {
+			width: 100%;
+		}
+        body{
+            background-color:#808080;
+        }
+	}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>Nicole Marchant</h1>
+	</div>
+	<div class="row">
+		<div class="col-3 menu">
+			<ul>
+				<li>Education</li>
+				<li>Skills</li>
+                <li>Contact Information</li>
+				<li>Awards</li>
+				<li>Publications</li>
+                <li>Organizations</li>
+                <li>Resume summary</li>
+			</ul>
+		</div>
+		<div class="col-6">
+			<h1>Objective</h1>
+			<p>My current career objective is to continue building my resume and skills and find work that allows me to work with front and back end coding and applications.</p>
+            <img src="https://cdn.dribbble.com/users/1450667/screenshots/16656237/media/ae2743a899e0688813d0fbc7122147d6.jpg?resize=400x300&vertical=center" width="460" height="345">
+		</div>
+		<div class="col-3 right">
+			<div class="aside">
+				<h2>High School</h2>
+				<p>Recieved diploma in 2013.</p>
+				<h2>Major</h2>
+				<p>Software Dev and Security.</p>
+				<h2>Minor</h2>
+				<p>Web and Digital Design.</p>
+			</div>
+      	</div>
+        <div class="col-4 right">
+            <div class ="aside">
+            	<h2> Call out quotes</h2>
+                <p>Works hard!--Former Boss</p>
+                <p>Learns fast--Former Boss</p>
+		</div>
+	</div>
+    <div class="col-13 right">
+		<div class="footer">
+		<h5>References available upon request.</h5>
+		</div>
+    </div>
+</body>
+</html>
